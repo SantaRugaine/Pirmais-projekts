@@ -24,7 +24,11 @@
                 b.innerHTML="<img src=vasara.jpg>";
             }
         }
-        bildeParadas();
+        function nokavet(){
+            setTimeout(bildeParadas,Math.random()*2000);
+        }
+
+       nokavet();
     </script>
 </body>
 </html>
