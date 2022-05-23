@@ -22,6 +22,10 @@
         function bildeParadas(){
             if (!klik){
                 b.innerHTML="<img src=vasara.jpg>";
+                klik=true;
+                document.getElementById("bilde").onclick=function(){
+                    bildeParadas();
+                }
             }
         }
         function nokavet(){
